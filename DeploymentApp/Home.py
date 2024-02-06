@@ -19,7 +19,7 @@ data1 = pd.read_csv('https://drive.google.com/uc?export=download&id=1gWfSxVA0pvH
 
 def redirect_to_prediction_page():
     # Exécuter le fichier Python pour la prédiction
-    subprocess.run(["streamlit", "run", "customer_segmentation_app.py", "--server.port", "8080"])
+    subprocess.run(["streamlit", "run", "customer_segmentation_app.py"])
 def highlight_missing(val):
     if pd.isnull(val):
         return 'background-color: red'
@@ -540,7 +540,7 @@ st.set_page_config(
 
 # Sidebar structure
 st.sidebar.title("Customer Classification Web App")
-st.sidebar.image("1.png", width=150)  # Ajoutez le chemin de votre logo
+st.sidebar.image("https://i.imgur.com/6u7vS2k.png", width=150)  # Ajoutez le chemin de votre logo
 st.sidebar.markdown("---")  # Ligne de séparation
 
 # Sélection de la page de navigation
