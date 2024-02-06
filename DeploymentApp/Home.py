@@ -14,8 +14,8 @@ import subprocess
 import pickle
 import os
 
-data = pd.read_csv('marketing_campaign.csv')
-data1 = pd.read_csv('nouveau_fichier.csv')
+data = pd.read_csv('https://drive.google.com/uc?export=download&id=1I6lZwW1kaAD8mXWd55RIxK-4t-VZRLOD')
+data1 = pd.read_csv('https://drive.google.com/uc?export=download&id=1gWfSxVA0pvHxgPP_Rhz10SGPnVOjKTVV')
 
 def redirect_to_prediction_page():
     # Exécuter le fichier Python pour la prédiction
